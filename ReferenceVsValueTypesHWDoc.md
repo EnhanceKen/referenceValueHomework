@@ -1,0 +1,4 @@
+# ReferenceVsValueTypes Assignment
+
+Value types are types where each instance keeps a unique copy of its data, usually as a struct, enum or tuple. Reference types are instances where a single copy of the data is shared, and the type is usually defined as a class. Value types create copies of independent instances with its own unique copy of its data, usually as a class, function or closure. Unlike value types, reference types implicitly creates a shared instance. After a copy, two variables then refer to a single instance of the data, so modifying data in the second variable also affects the original. Value types are utilized when comparing instance data with == makes sense and when you want copies to have independent state. Value types are also used when data will be used in code across multiple threads. Reference types are utilized when comparing instance identity with === makes sense and when you want to create shared, mutable state.
+
